@@ -1,0 +1,2 @@
+octomap_mapping/octomap_mapping:octomap_mapping/octomap_server:serial:ti_mmwave_rospkg
+-DCATKIN_DEVEL_PREFIX=/home/shelekhov/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/shelekhov/catkin_ws/install -G Unix Makefiles

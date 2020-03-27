@@ -1,0 +1,8 @@
+prefix=/home/shelekhov/catkin_ws/devel
+
+Name: ti_mmwave_rospkg
+Description: Description of ti_mmwave_rospkg
+Version: 3.3.0
+Cflags: -I/home/shelekhov/catkin_ws/devel/include -I/home/shelekhov/catkin_ws/src/ti_mmwave_rospkg/include
+Libs: -L/home/shelekhov/catkin_ws/devel/lib -lmmwave
+Requires: 
