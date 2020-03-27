@@ -1,0 +1,29 @@
+cd ~/catkin_ws
+
+catkin_make && source devel/setup.bash
+
+sudo chmod 666 /dev/ttyACM0
+sudo chmod 666 /dev/ttyACM1
+
+roslaunch ti_mmwave_rospkg 1443_3d.launch
+
+//parameters
+rostopic list
+rostopic echo /ti_mmwave/radar_scan
+
+rosparam list
+rosparam get /ti_mmwave/max_doppler_vel
+
+
+
+Octomap
+
+frame id: 
+ti_mmwave_pcl
+
+pointcld: 
+/ti_mmwave/radar_scan_pcl
+
+
+cd catkin_ws
+roslaunch octomap_server octomap_mapping.launch
